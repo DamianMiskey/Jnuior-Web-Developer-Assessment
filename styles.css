@@ -1178,7 +1178,7 @@ footer {
       flex-wrap:wrap;
     }
     .section-2 ul{
-      padding: 10px;
+      visibility:hidden;;
     }
-  
+
   }
