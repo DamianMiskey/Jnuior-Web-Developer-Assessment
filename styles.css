@@ -607,7 +607,7 @@ button {
 .Fprev {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 28px;
   font-size: 2em;
   color: #e0d2ae;
   cursor: pointer;
@@ -617,7 +617,7 @@ button {
 .Fnext {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 85px;
   font-size: 2em;
   color: #e0d2ae;
   cursor: pointer;
@@ -1177,8 +1177,8 @@ footer {
       align-items: center;
       flex-wrap:wrap;
     }
-    .footer-links .license{
-      display:block;
+    .section-2 ul{
+      padding: 10px;
     }
-
+  
   }
