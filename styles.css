@@ -1180,5 +1180,8 @@ footer {
     .section-2 ul{
       visibility:hidden;;
     }
+    .casino-options{
+      height:400px;
+    }
 
   }
