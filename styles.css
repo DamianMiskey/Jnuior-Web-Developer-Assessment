@@ -14,56 +14,13 @@ p {
 }
 
 /*navigation*/
-.navbar {
-  z-index: 1;
-  font-size: 18px;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-}
-
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links,
-.logo {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
-}
-
-.active {
-  display: block;
-}
 
 .nav-bar {
   height: 70px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .brand {
@@ -224,15 +181,12 @@ article {
   transform: translate(-50%, -50%);
 }
 
-.Hero-text p {
-  color: white;
-  float: right;
-}
 
 .Hero-text h2 {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: bold;
   margin: 0 auto;
+  text-align:left;
 }
 
 button {
@@ -273,6 +227,8 @@ button {
   border-radius: 24px;
   padding: 10px 55px;
   background: white;
+  margin-top:5px;
+  top: 25px;
 }
 
 /**Modal Pop*/
@@ -393,7 +349,7 @@ button {
 .cta {
   width: 50%;
   position: relative;
-  top: 10px;
+  top: 25px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -433,7 +389,6 @@ button {
   padding: 0px 5px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Myriad Pro;
 }
 
 /***Content****/
@@ -466,6 +421,15 @@ button {
   min-height: 245px;
 }
 
+.game-border a:hover{
+  cursor:pointer;
+  border-color:#2ab1ce;
+}
+
+.Fpost-border:hover{
+  cursor:pointer;
+}
+
 .image_border {
   display: block;
   max-width: 425px;
@@ -491,14 +455,11 @@ button {
   font-size: 1.75rem;
   font-weight: bold;
   text-transform: uppercase;
-  position: relative;
-  left: -128px;
 }
 
 .table-play a {
   background: #ffffff;
   border-radius: 24px;
-  font-family: raleway;
   color: #e0d2ae;
   padding: 10px 55px 10px 55px;
   text-decoration: none;
@@ -537,22 +498,13 @@ button {
 }
 
 .table-rank {
-  position: relative;
-  left: -82px;
-  font-weight: bold;
+  font-weight:bold;
 }
 
 .table-logo {
-  position: relative;
+  margin: 5px;
 }
 
-.table-logo img {
-  position: absolute;
-  top: -43px;
-  right: 253px;
-  max-width: 100%;
-  height: auto;
-}
 
 /**Casino Options*/
 .casino-options {
@@ -612,6 +564,7 @@ button {
   color: #e0d2ae;
   cursor: pointer;
   z-index: 1;
+  display:none;
 }
 
 .Fnext {
@@ -622,6 +575,7 @@ button {
   color: #e0d2ae;
   cursor: pointer;
   z-index: 1;
+  display:none;
 }
 
 .Fpost {
@@ -728,6 +682,7 @@ footer {
 .social:hover {
   background: #2ab1ce;
   color: #ffffff;
+  cursor:pointer;
 }
 
 .devices {
@@ -750,6 +705,14 @@ footer {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.main-article a:hover{
+  border-color: #2ab1ce;
+}
+
+.sub-articles a:hover{
+border-color: #2ab1ce;
 }
 
 .article-border {
@@ -822,6 +785,7 @@ footer {
   position: relative;
   top: 33px;
   display: block;
+  margin: 50px;
 }
 
 .subarticle-details {
@@ -839,6 +803,11 @@ footer {
 .subarticle-details h4, .subarticle-details p {
   margin: 1px 0;
 }
+
+.section-2 h2{
+  margin-top:5px;
+}
+
 
 /*flex-grid test*/
 .container-2 {
@@ -878,10 +847,6 @@ footer {
   border-radius: 5px;
 }
 
-.section-2 ul {
-  font-family: Raleway;
-  font-size: 14pt;
-}
 
 .container-2-box a {
   display: block;
@@ -1009,9 +974,6 @@ footer {
     display: block;
   }
 
-  .table-logo img {
-    position: static;
-  }
 
   .slots {
     max-width: 100%;
@@ -1029,7 +991,6 @@ footer {
   }
 
   .table-bonus p {
-    display: static;
     display: block;
     text-align: center;
   }
@@ -1054,10 +1015,8 @@ footer {
     flex: 0 1 auto;
     align-items: center;
   }
-
-  .main-article a {
-    flex-direction: column;
-    flex-wrap: wrap;
+  .border{
+    display:none;
   }
 }
 
@@ -1092,7 +1051,6 @@ footer {
   }
 
   .table-bonus p {
-    display: static;
     display: block;
     text-align: center;
   }
@@ -1128,9 +1086,7 @@ footer {
   .main-article {
     display: none;
   }
-  .sports-text p{
-    position:static;
-  }
+
 
 .section-2 ul{
   display: inline-flex;
@@ -1139,6 +1095,11 @@ footer {
   max-width: 100%;
   height: auto;
 }
+
+.casino-options{height:750px;
+}
+
+
 }
 
 /*Media query for header*/
@@ -1170,8 +1131,9 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .sports-text{
-      display:none;
+      margin: 10px;
     }
+
     .footer-links {
       flex-direction: column;
       align-items: center;
@@ -1180,8 +1142,17 @@ footer {
     .section-2 ul{
       visibility:hidden;;
     }
-    .casino-options{
-      height:400px;
-    }
 
+  }
+
+  @media only screen and (min-width: 640px){
+
+    .casino-options{height:750px;
+    }
+  }
+
+  @media only screen and (min-width: 800px){
+
+    .main-article .border{display:none;
+    }
   }
