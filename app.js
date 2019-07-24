@@ -1,3 +1,4 @@
+//jshint esversion:6
 /*burger Menu*/
 (function($) {
   $(function() {
@@ -43,7 +44,6 @@ $('.post-wrapper').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
         dots: false,
 
       }
@@ -81,7 +81,6 @@ $(".Fpost-wrapper").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
         dots: false,
       }
     },
