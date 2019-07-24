@@ -73,14 +73,14 @@ $(".Fpost-wrapper").slick({
   dots: false,
   infinite: false,
   slidesToShow: 6,
-  slidesToScroll: 3,
+  slidesToScroll: 6,
   nextArrow: $(".Fnext"),
   prevArrow: $(".Fprev"),
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
@@ -89,15 +89,17 @@ $(".Fpost-wrapper").slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
       }
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
       }
     }
       ]
