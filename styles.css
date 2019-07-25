@@ -564,6 +564,7 @@ button {
   color: #e0d2ae;
   cursor: pointer;
   z-index: 1;
+  display:none;
 }
 
 .Fnext {
@@ -574,6 +575,7 @@ button {
   color: #e0d2ae;
   cursor: pointer;
   z-index: 1;
+  display:none;
 }
 
 .Fpost {
